@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto Condensed';
+
+
+}
+
+#jogo {
+   
+
+    display: inline-block;
+    background-color: rgb(51, 51, 51);  
+    border-radius: 0.375em; 
+    background-color: #111111;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#resultado {
+    margin-left: 30px;
+    float: left;
+    font-size: 20px;
+}
+
+#resposta {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.linha {
+    height: 200px;
+    border-bottom: solid 1px;
+}
+
+img {
+    margin-left: 2%;
+    margin-top: 2%;
+    height: 175px;
+    width: 175px;
+    display: none;
+}
+
+.casa {
+    width: 200px;
+    height: 100%;
+    border-right: solid 1px;
+    float: left;
+}
+
+.xis,
+.bola,
+.velha {
+    font-family: 'Roboto Condensed';
+    color: white;
+    font-weight: bold;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    margin-top: 80px;
+    /* background-color: rgb(161, 53, 204);*/
+    /*background-image: linear-gradient(to bottom, #9056d3, #7918e9);*/
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-size: 40px;
+    font-weight: 100;
+    padding: 40px;
+    text-decoration: none;
+    box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: none;
+    display: inline-block;
+    cursor: pointer; 
+    background-image: url(jogo_da_velha/das.gif) ;
+    background-color: transparent;
+    width: 400px;
+    height: 225px;
+}
+
+input[type=button]:hover {
+    background: rgb(250, 250, 250);
+    background-image:url(jogo_da_velha/das.gif);
+    text-decoration: none;
+    color: #ec4e00;
+} 
+
+
+
+
+
+.title_resultado{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: #ec4e00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+td {
+    padding: 10px;
+    
+    border-right: 1px solid #ec4e00;
+    border-left: 1px solid #ec4e00;
+}
+
+td.xis {
+    font-weight: bold;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+td.bola {
+    font-weight: bold;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+td.velha {
+    font-weight: bold;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+td#xis {
+    text-align: center;
+       background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+td#bola {
+    text-align: center;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+td#velha {
+    text-align: center;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
